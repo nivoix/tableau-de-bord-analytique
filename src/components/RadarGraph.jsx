@@ -5,7 +5,7 @@ import {
   RadarChart,
   ResponsiveContainer,
 } from "recharts";
-import "./radarGraph.scss";
+import "./RadarGraph.scss";
 import { PropTypes } from "prop-types";
 
 const RadarGraph = ({ data }) => {
