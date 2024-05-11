@@ -1,0 +1,16 @@
+.cardActivity {
+  background-color: white;
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media (width < 425px) {
+  .cardActivity {
+    width: 45px;
+    height: 45px;
+  }
+}

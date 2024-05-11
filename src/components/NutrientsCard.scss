@@ -1,0 +1,28 @@
+.nutrientsCard {
+  width: 200px;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .infoNutrient {
+    display: flex;
+    height: 60px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 60%;
+    & .qteNutrient {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    & .nameNutrient {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+@media (width <= 425px) {
+  .nutrientsCard {
+    margin-inline: auto;
+  }
+}

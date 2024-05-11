@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  min-width: 1024px;
+  min-height: 689px;
+  position: relative;
+}
+
+.dashboard {
+  height: max-content;
+  padding: 20px 50px;
+  width: 93%;
+  & h1 {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    & P {
+      color: red;
+    }
+  }
+  & .felicitation {
+    margin-bottom: 40px;
+  }
+  & .containerGraph {
+    display: flex;
+    justify-content: space-between;
+    & .graphiques {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      & .activityGraph {
+        position: relative;
+        width: 100%;
+        height: 280px;
+      }
+      & .littleGraph {
+        display: flex;
+        justify-content: space-between;
+        height: 210px;
+        margin-top: 30px;
+        gap: 2%;
+        & .lineGraph,
+        .radarGraph,
+        .scoreGraph {
+          width: 210px;
+          height: 210px;
+        }
+      }
+    }
+    & .CardsNutriment {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media (width < 1024px) {
+  main {
+    min-width: 320px;
+    height: max-content;
+  }
+  .dashboard {
+    padding: 20px;
+    & .containerGraph {
+      flex-direction: column-reverse;
+      & .graphiques {
+        width: 100%;
+        & .littleGraph {
+          flex-wrap: wrap;
+          gap: 10px;
+          height: auto;
+          justify-content: space-evenly;
+        }
+      }
+      & .CardsNutriment {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+@media (width < 768px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  .dashboard {
+    width: 100%;
+    & .CardsNutriment {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (width <= 425px) {
+  .dashboard {
+    & .felicitation {
+      text-align: center;
+    }
+  }
+}
