@@ -14,7 +14,7 @@ const Login = () => {
     { value: "18", label: "18" },
   ];
   const optionData = [
-    { value: "API", label: "API" },
+    // { value: "API", label: "API" },
     { value: "dataMocked", label: "dataMocked" },
   ];
 
